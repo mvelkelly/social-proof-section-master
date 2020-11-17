@@ -1,0 +1,280 @@
+body, html {
+  margin: 0;
+}
+
+.top-pattern {
+  position: absolute;
+}
+
+.bottom-pattern {
+  position: absolute;
+  width: 30%;
+  float: right;
+  margin-left: 70%;
+}
+
+
+/* CREATES THE FLEX DISPLAY */
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+} */
+
+/* CREATE TWO EQUAL COLUMNS */
+.column {
+  flex: 50%;
+  margin-top: 5%;
+}
+
+
+
+
+
+.main-title {
+  width: 35%;
+  margin-left: 26%;
+  color: hsl(300, 43%, 22%);
+  font-family: 'Spartan', sans-serif;
+}
+
+.sub-title {
+  width: 50%;
+  margin-left: 26%;
+  color: hsl(303, 10%, 53%);
+  font-family: 'Spartan', sans-serif;
+  font-weight: lighter;
+}
+/* CONTROLS THE SCREEN RESPONSIVENESS FOR THE MAIN TITLE AND SUBTITLE*/
+@media only screen and (max-width: 600px) {
+  .main-title {
+    width: 70%;
+    text-align: center;
+  }
+
+  .sub-title {
+    width: 70%;
+    text-align: center;
+  }
+}
+/* CREATES THE LEFT PADDING IN THE REVIEW BOXES */
+.star-1 {
+  padding-left: 10px;
+}
+
+/* CONTROLS ALL STARS */
+.star {
+  float: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .star {
+   text-align: center;
+ }
+ .star-1 {
+   margin-left: 40%;
+ }
+
+}
+
+/* ADDS TOP AND BOTTOM PADDING INSIDE THE BOX. CONTROLS THE PARAGRAPH */
+.rating {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 2px;
+}
+
+
+
+/* CONTROLS DIV OF FIRST REVIEW */
+.review-1{
+  margin-left: 5%;
+  background-color: hsl(300, 24%, 96%);
+  width: 50%;
+  border-radius: 5px;
+  /* padding-top: 2px; */
+}
+
+/* CONTROLS DIV OF SECOND REVIEW */
+.review-2{
+  margin-left: 10%;
+  background-color: hsl(300, 24%, 96%);
+  width: 50%;
+  border-radius: 5px;
+}
+
+/* CONTROLS DIV OF THIRD REVIEW */
+.review-3 {
+  margin-left: 15%;
+  background-color: hsl(300, 24%, 96%);
+  width: 50%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .rating {
+    margin-top: 40px;
+  }
+  .review-1 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .review-2 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .review-3 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+/* CONTROLS THE CUSTOMER COMMENT SECTION */
+.customer-comment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 2px; */
+  justify-items: center;
+  /* display: flex;
+  grid-gap: 15px;
+  justify-content: center; */
+}
+
+/* THE INLINE BLOCK DISPLAY ALLOWS FOR EACH DIV BOX TO TAKE UP ITS FULL WIDTH ON MOBILE */
+@media only screen and (max-width: 600px) {
+.customer-comment {
+  display: inline-block;
+}
+}
+
+/* CONTROLS EACH INDIVIDUAL CUSTOMER COMMENT BOX */
+
+.customer-1{
+  background-color: hsl(300, 43%, 22%);
+  text-align: center;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  border-style: none;
+  margin-left: 50%;
+  /* flex-direction: column; */
+}
+
+
+.customer-2{
+  background-color: hsl(300, 43%, 22%);
+  text-align: center;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  border-style: none;
+  /* flex-direction: column; */
+  margin-top: 5%;
+
+}
+
+.customer-3{
+  background-color: hsl(300, 43%, 22%);
+  text-align: center;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 10%;
+  margin-right: 50%;
+  /* flex-direction: column; */
+}
+
+@media only screen and (max-width: 600px) {
+.customer-1 {
+  margin-left: 1px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.customer-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.customer-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+}
+
+/* CONTROLS EVERYTHING INSIDE OF THE COMMENT BOXES */
+.customer1-img {
+  border-radius: 50%;
+  float: left;
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+.comment1-title {
+  display: inline-block;
+  margin-top: 8%;
+  margin-bottom: 0;
+  margin-right: 30%;
+  padding-left: 0;
+  color: white;
+}
+
+.comment1-subtitle {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 30%;
+  color: hsl(333, 80%, 67%)
+}
+
+.comment1-paragraph {
+  color: white;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+
+/* CONTROLS FOOTER */
+.attribution {
+  margin-top: 10%;
+}
