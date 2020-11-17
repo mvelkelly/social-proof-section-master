@@ -6,6 +6,13 @@ body, html {
   position: absolute;
 }
 
+@media only screen and (max-width: 600px) {
+  .top-pattern {
+    width: 50%;
+    position: absolute;
+  }
+}
+
 .bottom-pattern {
   position: absolute;
   width: 30%;
@@ -23,6 +30,7 @@ body, html {
 @media only screen and (max-width: 600px) {
   .row {
     flex-direction: column;
+
   }
 }
 
@@ -64,11 +72,13 @@ body, html {
   .main-title {
     width: 70%;
     text-align: center;
+    margin-left: 15%;
   }
 
   .sub-title {
     width: 70%;
     text-align: center;
+    margin-left: 15%;
   }
 }
 /* CREATES THE LEFT PADDING IN THE REVIEW BOXES */
